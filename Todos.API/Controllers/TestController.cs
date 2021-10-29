@@ -11,5 +11,9 @@ namespace Todos.API.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
+        public IActionResult Get()
+        {
+            return Ok(new { message = "Orest is a nice guy" });
+        }
     }
 }
